@@ -12,19 +12,19 @@ function App({ articles }) {
   };
   return (
     <>
-      <h1>Sorting table</h1>
+      <h1>Article Sorting</h1>
       <div className="App">
         <section>
           <p>
             <label>
-              Sort by
+              Ordenar por
             </label>
             <button
               data-testid="most-upvoted-link"
               className="small"
               onClick={handleMostUpvoted}
             >
-              Most Upvoted
+              Más votados
             </button>
             &nbsp;
             <button
@@ -32,7 +32,7 @@ function App({ articles }) {
               className="small"
               onClick={handleMostRecent}
             >
-              Most Recent
+              Más recientes
             </button>
         </p>
         </section>

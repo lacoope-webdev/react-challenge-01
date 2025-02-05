@@ -6,9 +6,9 @@ function Articles({ articles = [] }) {
       <table>
         <thead>
           <tr>
-            <th>Title</th>
-            <th>Upvotes</th>
-            <th>Date</th>
+            <th>Títulos</th>
+            <th>Votos</th>
+            <th>Fecha</th>
           </tr>
         </thead>
         <tbody>
