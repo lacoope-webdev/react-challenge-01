@@ -1,38 +1,27 @@
+import { useState } from "react";
 import Articles from "./components/Articles";
 
 import "./mpv.css"
 
 function App({ articles }) {
-  const handleMostUpvoted = () => {
-    // Logic for most upvoted articles
+  const [orderDate, setOrdenDate] = useState(0);
+
+  const handleDateOrder = () => {
+    // Lógica de ordenamiento por fechas
   };
 
-  const handleMostRecent = () => {
-    // Logic for most recent articles
-  };
   return (
     <>
       <h1>Article Sorting</h1>
       <div className="App">
         <section>
           <p>
-            <label>
-              Ordenar por
-            </label>
             <button
-              data-testid="most-upvoted-link"
+              data-testid="date-order-link"
               className="small"
-              onClick={handleMostUpvoted}
+              onClick={handleDateOrder}
             >
-              Más votados
-            </button>
-            &nbsp;
-            <button
-              data-testid="most-recent-link"
-              className="small"
-              onClick={handleMostRecent}
-            >
-              Más recientes
+              Ordenar por {orderDate > 0 ? 'más antigüos' : 'más recientes'}
             </button>
         </p>
         </section>
